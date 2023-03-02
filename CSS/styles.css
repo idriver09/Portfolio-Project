@@ -16,8 +16,21 @@
 body {
     font-family: 'raleway', sans-serif;
     font-weight: 400;
-    
-    
+    overflow-x: hidden;
+
+}
+
+#contact-info-heading {
+    position:relative;
+    left:2%;
+    top: 5%;
+}
+
+.contact-info {
+    margin: auto;
+    left: 2%;
+    position: relative;
+    top:50px;
 }
 
 h1 {
@@ -52,25 +65,35 @@ a:active {
     color: var(--active);
   }
 
-button, 
-.button {
-    border:none;
+.buttong-parent {
+    height:300px;
+    margin: 100px;
+}
+
+ 
+.button-1 {
+    border: 3px;
+    width: 300px;
     font-family: inherit;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid var(--dark-grey);
+    position: relative;
+    
+    
+    
+}
+
+.button-1:hover {
+    cursor: pointer;
+    box-shadow: inset 300px var(--dark-grey);
     transition: 2s;
 }
 
-button,
-.button:hover, button:focus {
-     cursor: pointer;
-    opacity: 0.5;
-    color: var(--black)
-}
+
 
 
 
@@ -80,21 +103,10 @@ button,
 }
 
 
-.profile__portrait {
-    float: left;
-    width: 200px;
-    margin-right: 40px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.page-footer {
-    clear: both;
-}
-
 .profile {
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .page-footer {
@@ -102,12 +114,23 @@ button,
     clear: both;
     flex-direction: column;
     text-align: center;
+    position: relative;
+    clear: both;
+    width: 100%;
+    top:400px;
+    left:750px;
+}
+
+.social-media {
+    position: absolute;
+    bottom:0;
 }
 
 .home-header {
     display:flex;
     width: 100%;
     padding:20px;
+    height:300px;
 }
 
 .home-header-item {
@@ -120,8 +143,14 @@ button,
    height: 200px;
 }
 
+.heading-items{
+    position: relative;
+    width: 100%;
+}
 
 .navigation-list {
+    position:absolute;
+    left:20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -138,6 +167,10 @@ button,
    border-bottom: var(--black) 5px;
     
  
+}
+
+.website-logo {
+    height: 250px;
 }
 
 .grid {
@@ -175,25 +208,54 @@ button,
 }
 
 .about-me {
-    margin:auto;
-    width: 50%;
-    padding: 10px;
+   position: relative;
+    width: 100%;
+    height: 550px;
+}
+
+.profile__portrait {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    right: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    top:1%;
+   
+       
+}
+
+.about-me-paragraph {
+    position:absolute;
+    height: 100px;
+    bottom:170px;
     text-align: center;
+    left: 25%;
+    
+    
+    
+}
+
+.astronaut {
+    position: relative;
+
 }
 
 .my-painting {
-    height: 800px;
-    display: block;
+    position: absolute;
+    height: 400px;
     width: auto;
-   margin-right: auto;
-   margin-left: auto;
+    border-radius: 50%;
+    top:0;
+    right:30%;
+    
+   
 }
-.about-table {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:2%;
-    text-align: center;
+
+#contact-form {
+    position: relative;
+    left:20px;
 }
 
 
