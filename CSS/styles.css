@@ -393,11 +393,13 @@ a:active {
 @media all and (max-width: 500px) {
     .grid {
       grid-template-columns: 1fr;
+      
     }
   }
   @media all and (min-width: 500px) and (max-width: 750px){
     .grid {
       grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
     }
   }
   @media all and (max-width: 750px) {
@@ -414,15 +416,22 @@ a:active {
     }
   }
   
-@media all and (max-width: 500px){
-    .navigation-list-item{
+@media all and (max-width: 750px){
+    .navigation-list-item {
         position: relative;
         font-size: 22px;
-        top:100px;
-        margin-left: 25%;
-        margin-right:25%
+        top:200px;
+        
     }
 
+}
+
+@media all and (max-width: 750px){
+    .website-logo {
+        position: absolute;
+        left:100px;
+        z-index: -1;
+    }
 }
 
 
