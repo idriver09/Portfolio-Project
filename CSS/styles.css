@@ -16,19 +16,23 @@
 body {
     font-family: 'raleway', sans-serif;
     font-weight: 400;
+    background-color: var(--dark-grey);
     
 }
 
 
-h1 {
+h1, h2, h3, h5 {
     color: var(--primary-color);
     text-shadow:var(--secondary-color);
+  
 }
+
 
 
 
 
 p {
+    color: var(--secondary-color);
     font-weight: bold;
     font-size: 18px;
 }
@@ -79,15 +83,12 @@ a:active {
    
 }
 
-.navigation-list-item {
-
-}
-
-
-
-
 #contact-info-heading {
     text-align: center;
+    text-decoration: underline;
+}
+
+#about-me-heading {
     text-decoration: underline;
 }
 
@@ -118,6 +119,7 @@ a:active {
 #contact-form {
     margin: 50px;
     text-align: center;
+    color: var(--secondary-color)
 }
 
 .standard-label {
