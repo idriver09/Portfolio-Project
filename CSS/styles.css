@@ -62,6 +62,7 @@ a:active {
 }
 
 .website-logo {
+    border-radius: 50%;
 
 }
 
@@ -213,24 +214,16 @@ button,
     padding: 5px;
 }
 
-.my-painting {
-    height: 800px;
-    display: block;
-    width: auto;
-   margin-right: auto;
-   margin-left: auto;
-   border-radius: 50%;
-   border-style: solid;
-   border: 5px var(--dark-grey);
-}
-.about-table {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:2%;
+.astronaut {
     text-align: center;
+    margin: 20px;
 }
-
+.my-painting {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
 
 
 
