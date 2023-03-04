@@ -228,8 +228,63 @@ button,
 }
 
 
+@keyframes inner-pod-color-change {
+    0%{
+        fill: var(--dark-grey);
+    }
+    
+    100%{
+        fill: var(--primary-color);
+    }
+    
+}
 
+.inner-pod, .dots {
+    animation: inner-pod-color-change;
+    animation-duration: 20s;
+    animation-iteration-count:infinite ;
+}
 
+@keyframes logo-letter-color-change {
+    0% {
+        fill: var(--dark-grey)
+    }
+
+    50% {
+        fill: var(--dark-grey);
+    }
+
+    100% {
+        fill: var(--primary-color);
+    }
+}
+
+.logo-d, .logo-i, .bottom-hub {
+    animation: logo-letter-color-change;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes planet-color-change {
+    0% {
+        fill: var(--dark-grey)
+    }
+
+    75% {
+        fill: var(--dark-grey);
+    }
+
+    100% {
+        fill: var(--secondary-color);
+    }
+}
+
+.planet {
+    animation: planet-color-change;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
 
 
 
