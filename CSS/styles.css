@@ -373,6 +373,26 @@ button,
     }
   }
   
+@media all and (max-width: 750px) {
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .website-logo {
+        height: 200px;
+        width: 200px;
+    }
+    .intro, .about-me {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .my-painting {
+        height: 300px;
+        width: 300px;
+    }
+}
 
 
 
