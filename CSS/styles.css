@@ -1,7 +1,7 @@
 :root {
     --primary-color: #3d5afe;
     --secondary-color: #dfdbdb8a;
-    --dark-grey: #2b2b2b;
+    --dark-grey: #242020;
     --active:rgb(17, 187, 255);
     --black:rgb(0, 0, 0);
     --orange:#fc8700;
@@ -17,6 +17,7 @@ body {
     font-family: 'raleway', sans-serif;
     font-weight: 400;
     background-color: var(--dark-grey);
+    overflow-x: hidden;
     
 }
 
@@ -66,13 +67,13 @@ a:active {
 }
 
 .website-logo {
-    border-radius: 50%;
+    margin: 10px;
 
 }
 
 
 .navigation-list {
-    margin: 30px;
+    margin: 40px;
     padding: 30px;
     width: 30%;
     display: flex;
@@ -81,6 +82,11 @@ a:active {
     list-style: none;
 
    
+}
+
+.navigation-list-item {
+    padding: 10px;
+    font-size: 25px;
 }
 
 #contact-info-heading {
@@ -227,22 +233,44 @@ button,
     background-color: var(--white);
 }
 
+@keyframes about-page-image-effect {
+    0%{
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-me-profile-portrait, #home-page-profile-portrait {
+    animation: about-page-image-effect;
+    animation-duration: 4s;
+    transition: ease;
+}
+
 
 @keyframes inner-pod-color-change {
     0%{
         fill: var(--dark-grey);
     }
-    
+    50% {
+        fill: var(--dark-grey);
+    }
     100%{
         fill: var(--primary-color);
     }
     
 }
 
-.inner-pod, .dots {
+.inner-pod, .dots , .bottom-hub{
     animation: inner-pod-color-change;
-    animation-duration: 20s;
-    animation-iteration-count:infinite ;
+    animation-duration: 2s;
+    fill: var(--primary-color);
+   
 }
 
 @keyframes logo-letter-color-change {
@@ -250,7 +278,7 @@ button,
         fill: var(--dark-grey)
     }
 
-    50% {
+    80% {
         fill: var(--dark-grey);
     }
 
@@ -259,10 +287,11 @@ button,
     }
 }
 
-.logo-d, .logo-i, .bottom-hub {
+.logo-d, .logo-i {
     animation: logo-letter-color-change;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    fill: var(--primary-color);
+   
     
 }
 
@@ -271,24 +300,47 @@ button,
         fill: var(--dark-grey)
     }
 
-    75% {
+    80% {
         fill: var(--dark-grey);
     }
 
-    100% {
+    100%{
         fill: var(--secondary-color);
-    }
+     }
 }
 
 .planet {
     animation: planet-color-change;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    fill: var(--secondary-color);
+    
+   
 }
 
+@keyframes ufo-move {
+    from{
+        transform: translate(0,10000px) 
+    }
+    to {
+        transform: translate(0,0);
+    }
+ }
+
+ .ufo-top, .ufo-bottom {
+    animation: ufo-move;
+    animation-duration: 1s;
+    
+ }
 
 
-/*helmet*/
+
+
+
+
+
+
+
+ /*helmet*/
 
 @keyframes helmet-color-change {
     0% {
@@ -432,11 +484,18 @@ button,
     .navigation-list {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        margin-right: 100px;
 
+    }
+
+    .navigation-list-item {
+        padding: 10px;
     }
     .website-logo {
         height: 200px;
         width: 200px;
+     
     }
     .intro, .about-me {
         margin-left: 30px;
