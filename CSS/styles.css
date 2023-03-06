@@ -2,6 +2,7 @@
     --primary-color: #3d5afe;
     --secondary-color: #dfdbdb8a;
     --dark-grey: #242020;
+    --lighter-grey: #302b2b;
     --active:rgb(17, 187, 255);
     --black:rgb(0, 0, 0);
     --orange:#fc8700;
@@ -154,7 +155,7 @@ a:active {
     border-style: inset;
     border-color: var(--secondary-color);
     border-width: 5px;
-    
+    background-color: var(--lighter-grey);
 }
 
 .send-message {
@@ -194,9 +195,12 @@ button,
   
 .grid-item {
 
-    background-color: var(--secondary-color);
+    border-style: inset;
+    border-color: var(--secondary-color);
+    border-width: 5px;
     padding: 1%;
     text-align: center;
+    background-color: var(--lighter-grey);
   
 }  
 
