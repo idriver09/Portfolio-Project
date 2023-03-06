@@ -45,6 +45,7 @@ a {
 a:visited {
   color: var(--primary-color);
 }
+
  
 a:hover {
     text-decoration: none;
@@ -148,8 +149,12 @@ a:active {
 }
 
 .social-media {
-    margin: auto;
+    margin: 50px;
     font-size: 30px;
+    border-style: inset;
+    border-color: var(--secondary-color);
+    border-width: 5px;
+    
 }
 
 .send-message {
@@ -227,10 +232,13 @@ button,
     margin: 20px;
 }
 .my-painting {
-    height: 500px;
-    width: 500px;
+    margin: 10%;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     background-color: var(--white);
+    border-style: solid;
+    border-color: var(--white);
 }
 
 @keyframes about-page-image-effect {
