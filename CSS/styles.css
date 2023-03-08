@@ -206,10 +206,7 @@ button:focus {
 
 .about-me-images {
     background-color: var(--lighter-grey);
-    margin: 5%;
-    border-style: solid;
-    border-color: var(--secondary-color);
-    border-width: 4px;
+  
 }
 
 .about-me-profile-portrait {
