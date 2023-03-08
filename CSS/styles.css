@@ -204,10 +204,6 @@ button:focus {
   text-align: center;
 }
 
-.about-me-images {
-    background-color: var(--lighter-grey);
-  
-}
 
 .about-me-profile-portrait {
   height: 300px;
