@@ -209,7 +209,7 @@ button:focus {
     margin: 5%;
     border-style: solid;
     border-color: var(--secondary-color);
-    border-width: 5px;
+    border-width: 4px;
 }
 
 .about-me-profile-portrait {
